@@ -7,3 +7,27 @@
 //
 
 import Foundation
+
+enum FileType {
+    case image
+}
+
+protocol SharedFile {
+    var type: FileType { get }
+}
+
+struct Image: SharedFile {
+    var type: FileType {
+        get {
+            return .image
+        }
+    }
+    
+}
+
+class Fetcher {
+    func fetch() -> SharedFile {
+        return Image()
+    }
+    
+}
