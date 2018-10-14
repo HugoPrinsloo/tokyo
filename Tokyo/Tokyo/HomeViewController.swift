@@ -17,6 +17,10 @@ class HomeViewController: UIViewController {
         collectionView.register(UINib(nibName: "FeedCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "Cell")
         collectionView.dataSource = self
         collectionView.delegate = self
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: collectionView.frame.width, height: 200)
+        collectionView.collectionViewLayout = layout
     }
     
 }
