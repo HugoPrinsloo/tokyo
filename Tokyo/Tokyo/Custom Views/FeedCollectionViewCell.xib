@@ -12,34 +12,52 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="FeedCollectionViewCell" customModule="Tokyo" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="249" height="194"/>
+            <rect key="frame" x="0.0" y="0.0" width="335" height="400"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="249" height="194"/>
+                <rect key="frame" x="0.0" y="0.0" width="335" height="400"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="B5o-QZ-593">
-                        <rect key="frame" x="0.0" y="0.0" width="249" height="194"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="8"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="400"/>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbg-aN-AZD">
+                        <rect key="frame" x="0.0" y="300" width="335" height="100"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oa-2J-iSo">
+                                <rect key="frame" x="16" y="37" width="303" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2oa-2J-iSo" firstAttribute="leading" secondItem="qbg-aN-AZD" secondAttribute="leading" constant="16" id="UfM-Eb-NIV"/>
+                            <constraint firstItem="2oa-2J-iSo" firstAttribute="centerY" secondItem="qbg-aN-AZD" secondAttribute="centerY" id="c7i-Ac-JrQ"/>
+                            <constraint firstItem="2oa-2J-iSo" firstAttribute="centerX" secondItem="qbg-aN-AZD" secondAttribute="centerX" id="vSu-Bh-3x7"/>
+                            <constraint firstAttribute="height" constant="100" id="y6y-jj-mRK"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="qbg-aN-AZD" secondAttribute="trailing" id="1GO-OB-C7i"/>
                 <constraint firstItem="B5o-QZ-593" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2kr-xW-YTw"/>
+                <constraint firstAttribute="bottom" secondItem="qbg-aN-AZD" secondAttribute="bottom" id="565-HT-MUG"/>
                 <constraint firstAttribute="bottom" secondItem="B5o-QZ-593" secondAttribute="bottom" id="GpW-cv-rA6"/>
                 <constraint firstAttribute="trailing" secondItem="B5o-QZ-593" secondAttribute="trailing" id="Ws1-QZ-KfZ"/>
                 <constraint firstItem="B5o-QZ-593" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ltu-IP-Ebo"/>
+                <constraint firstItem="qbg-aN-AZD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="t6E-SD-63R"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="249" height="194"/>
+            <size key="customSize" width="249" height="300"/>
             <connections>
                 <outlet property="imageView" destination="B5o-QZ-593" id="jxu-lF-hZK"/>
+                <outlet property="titleBackgroundView" destination="qbg-aN-AZD" id="fjg-FE-udL"/>
+                <outlet property="titleLabel" destination="2oa-2J-iSo" id="nb7-KZ-DYJ"/>
             </connections>
-            <point key="canvasLocation" x="-406" y="-25"/>
+            <point key="canvasLocation" x="-407.19999999999999" y="22.488755622188908"/>
         </collectionViewCell>
     </objects>
     <resources>
