@@ -34,6 +34,8 @@ class HomeViewController: UIViewController {
         
         title = "Feed"
         navigationController?.navigationBar.prefersLargeTitles = true
+        
+       
     }
     
     @IBAction func handleAddButtonTap(_ sender: Any) {
