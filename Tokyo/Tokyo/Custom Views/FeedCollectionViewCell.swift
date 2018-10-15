@@ -16,5 +16,11 @@ class FeedCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
 
     }
+    
+    func configure(for item: SharedFile) {
+        if let item = item as? Image {
+            imageView.image = item.image
+        }
+    }
 
 }

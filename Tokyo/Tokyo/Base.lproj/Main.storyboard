@@ -24,11 +24,11 @@
                                     <size key="itemSize" width="300" height="400"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="16" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="0AK-zM-vOM">
-                                        <rect key="frame" x="37.666666666666664" y="0.0" width="300" height="400"/>
+                                        <rect key="frame" x="37.666666666666664" y="16" width="300" height="400"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
@@ -47,7 +47,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eaJ-cv-X5F"/>
                     </view>
-                    <navigationItem key="navigationItem" id="WN7-Ra-gs5"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="R1d-KI-1vM">
+                        <barButtonItem key="rightBarButtonItem" image="AddIcon" id="jnP-CG-fPv">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="handleAddButtonTap:" destination="mWB-fh-2QV" id="JAK-RJ-hQl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="O6q-t2-bKz" id="NLU-3m-XVS"/>
                     </connections>
@@ -66,14 +73,37 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="jM1-lW-LCe" kind="relationship" relationship="viewControllers" id="DAW-75-7Kk"/>
+                        <segue destination="XMK-1f-tia" kind="relationship" relationship="viewControllers" id="lko-XW-M27"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZu-xR-hhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1055.2" y="154.43349753694582"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2Gi-KX-5Kc">
+            <objects>
+                <viewController id="XMK-1f-tia" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hnc-E1-h8T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QHT-2Y-vT8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="SettingIcon" selectedImage="SettingIcon" id="sOW-8f-gVp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="drX-Wa-32Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250" y="890"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="brw-7M-Onj">
@@ -96,6 +126,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AddIcon" width="18" height="18"/>
         <image name="FeedIcon" width="24" height="20"/>
+        <image name="SettingIcon" width="26" height="26"/>
     </resources>
 </document>

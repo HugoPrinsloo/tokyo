@@ -12,6 +12,18 @@
 		6E76B192216B7B68003C0F9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E76B190216B7B68003C0F9C /* Main.storyboard */; };
 		6E76B194216B7B6A003C0F9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E76B193216B7B6A003C0F9C /* Assets.xcassets */; };
 		6E76B197216B7B6A003C0F9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E76B195216B7B6A003C0F9C /* LaunchScreen.storyboard */; };
+		6E88236E21751C9B004F5AB0 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E88236D21751C9B004F5AB0 /* DummyData.swift */; };
+		6E88237A21751DAC004F5AB0 /* p7.JPEG in Resources */ = {isa = PBXBuildFile; fileRef = 6E88237021751DAC004F5AB0 /* p7.JPEG */; };
+		6E88237B21751DAC004F5AB0 /* p10.JPEG in Resources */ = {isa = PBXBuildFile; fileRef = 6E88237121751DAC004F5AB0 /* p10.JPEG */; };
+		6E88237C21751DAC004F5AB0 /* p6.JPEG in Resources */ = {isa = PBXBuildFile; fileRef = 6E88237221751DAC004F5AB0 /* p6.JPEG */; };
+		6E88238021751DAC004F5AB0 /* p5.JPEG in Resources */ = {isa = PBXBuildFile; fileRef = 6E88237621751DAC004F5AB0 /* p5.JPEG */; };
+		6E88238121751DAC004F5AB0 /* p9.JPEG in Resources */ = {isa = PBXBuildFile; fileRef = 6E88237721751DAC004F5AB0 /* p9.JPEG */; };
+		6E88238221751DAC004F5AB0 /* p8.JPEG in Resources */ = {isa = PBXBuildFile; fileRef = 6E88237821751DAC004F5AB0 /* p8.JPEG */; };
+		6E8CE58D21751EF9007B8B45 /* p3.JPEG in Resources */ = {isa = PBXBuildFile; fileRef = 6E8CE58921751EF8007B8B45 /* p3.JPEG */; };
+		6E8CE58E21751EF9007B8B45 /* p1.JPEG in Resources */ = {isa = PBXBuildFile; fileRef = 6E8CE58A21751EF9007B8B45 /* p1.JPEG */; };
+		6E8CE58F21751EF9007B8B45 /* p2.JPEG in Resources */ = {isa = PBXBuildFile; fileRef = 6E8CE58B21751EF9007B8B45 /* p2.JPEG */; };
+		6E8CE59021751EF9007B8B45 /* p4.JPEG in Resources */ = {isa = PBXBuildFile; fileRef = 6E8CE58C21751EF9007B8B45 /* p4.JPEG */; };
+		6EA86E9E217372CD00DEE55F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA86E9D217372CD00DEE55F /* CloudKit.framework */; };
 		6EBF9CE9217351D500CB1536 /* SharedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF9CE8217351D500CB1536 /* SharedFile.swift */; };
 		6EBF9CEC217361DC00CB1536 /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF9CEA217361DC00CB1536 /* FeedCollectionViewCell.swift */; };
 		6EBF9CED217361DC00CB1536 /* FeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EBF9CEB217361DC00CB1536 /* FeedCollectionViewCell.xib */; };
@@ -25,6 +37,19 @@
 		6E76B193216B7B6A003C0F9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E76B196216B7B6A003C0F9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E76B198216B7B6A003C0F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E88236D21751C9B004F5AB0 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		6E88237021751DAC004F5AB0 /* p7.JPEG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p7.JPEG; sourceTree = "<group>"; };
+		6E88237121751DAC004F5AB0 /* p10.JPEG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p10.JPEG; sourceTree = "<group>"; };
+		6E88237221751DAC004F5AB0 /* p6.JPEG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p6.JPEG; sourceTree = "<group>"; };
+		6E88237621751DAC004F5AB0 /* p5.JPEG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p5.JPEG; sourceTree = "<group>"; };
+		6E88237721751DAC004F5AB0 /* p9.JPEG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p9.JPEG; sourceTree = "<group>"; };
+		6E88237821751DAC004F5AB0 /* p8.JPEG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p8.JPEG; sourceTree = "<group>"; };
+		6E8CE58921751EF8007B8B45 /* p3.JPEG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p3.JPEG; sourceTree = "<group>"; };
+		6E8CE58A21751EF9007B8B45 /* p1.JPEG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p1.JPEG; sourceTree = "<group>"; };
+		6E8CE58B21751EF9007B8B45 /* p2.JPEG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p2.JPEG; sourceTree = "<group>"; };
+		6E8CE58C21751EF9007B8B45 /* p4.JPEG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p4.JPEG; sourceTree = "<group>"; };
+		6EA86E9B217372C800DEE55F /* Tokyo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tokyo.entitlements; sourceTree = "<group>"; };
+		6EA86E9D217372CD00DEE55F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		6EBF9CE8217351D500CB1536 /* SharedFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedFile.swift; sourceTree = "<group>"; };
 		6EBF9CEA217361DC00CB1536 /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		6EBF9CEB217361DC00CB1536 /* FeedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -35,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EA86E9E217372CD00DEE55F /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +72,7 @@
 			children = (
 				6E76B18B216B7B68003C0F9C /* Tokyo */,
 				6E76B18A216B7B68003C0F9C /* Products */,
+				6EA86E9C217372CD00DEE55F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +87,10 @@
 		6E76B18B216B7B68003C0F9C /* Tokyo */ = {
 			isa = PBXGroup;
 			children = (
+				6EA86E9B217372C800DEE55F /* Tokyo.entitlements */,
 				6E76B18C216B7B68003C0F9C /* AppDelegate.swift */,
 				6EBF9CE8217351D500CB1536 /* SharedFile.swift */,
+				6E8CE58821751DDE007B8B45 /* DummyData */,
 				6E3FC0EC216CD7CF00F87A54 /* HomeViewController.swift */,
 				6E76B190216B7B68003C0F9C /* Main.storyboard */,
 				6EBF9CEE217361E300CB1536 /* Custom Views */,
@@ -70,6 +99,40 @@
 				6E76B198216B7B6A003C0F9C /* Info.plist */,
 			);
 			path = Tokyo;
+			sourceTree = "<group>";
+		};
+		6E88236F21751DAC004F5AB0 /* DummyPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				6E88237021751DAC004F5AB0 /* p7.JPEG */,
+				6E88237121751DAC004F5AB0 /* p10.JPEG */,
+				6E8CE58A21751EF9007B8B45 /* p1.JPEG */,
+				6E8CE58B21751EF9007B8B45 /* p2.JPEG */,
+				6E8CE58921751EF8007B8B45 /* p3.JPEG */,
+				6E8CE58C21751EF9007B8B45 /* p4.JPEG */,
+				6E88237221751DAC004F5AB0 /* p6.JPEG */,
+				6E88237621751DAC004F5AB0 /* p5.JPEG */,
+				6E88237721751DAC004F5AB0 /* p9.JPEG */,
+				6E88237821751DAC004F5AB0 /* p8.JPEG */,
+			);
+			path = DummyPhotos;
+			sourceTree = "<group>";
+		};
+		6E8CE58821751DDE007B8B45 /* DummyData */ = {
+			isa = PBXGroup;
+			children = (
+				6E88236D21751C9B004F5AB0 /* DummyData.swift */,
+				6E88236F21751DAC004F5AB0 /* DummyPhotos */,
+			);
+			path = DummyData;
+			sourceTree = "<group>";
+		};
+		6EA86E9C217372CD00DEE55F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EA86E9D217372CD00DEE55F /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6EBF9CEE217361E300CB1536 /* Custom Views */ = {
@@ -113,6 +176,14 @@
 				TargetAttributes = {
 					6E76B188216B7B68003C0F9C = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -139,10 +210,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E8CE58E21751EF9007B8B45 /* p1.JPEG in Resources */,
+				6E88238121751DAC004F5AB0 /* p9.JPEG in Resources */,
+				6E8CE58D21751EF9007B8B45 /* p3.JPEG in Resources */,
+				6E88238221751DAC004F5AB0 /* p8.JPEG in Resources */,
+				6E88237A21751DAC004F5AB0 /* p7.JPEG in Resources */,
 				6E76B197216B7B6A003C0F9C /* LaunchScreen.storyboard in Resources */,
 				6E76B194216B7B6A003C0F9C /* Assets.xcassets in Resources */,
+				6E8CE59021751EF9007B8B45 /* p4.JPEG in Resources */,
 				6EBF9CED217361DC00CB1536 /* FeedCollectionViewCell.xib in Resources */,
+				6E88238021751DAC004F5AB0 /* p5.JPEG in Resources */,
+				6E88237C21751DAC004F5AB0 /* p6.JPEG in Resources */,
 				6E76B192216B7B68003C0F9C /* Main.storyboard in Resources */,
+				6E88237B21751DAC004F5AB0 /* p10.JPEG in Resources */,
+				6E8CE58F21751EF9007B8B45 /* p2.JPEG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +237,7 @@
 				6EBF9CE9217351D500CB1536 /* SharedFile.swift in Sources */,
 				6E76B18D216B7B68003C0F9C /* AppDelegate.swift in Sources */,
 				6EBF9CEC217361DC00CB1536 /* FeedCollectionViewCell.swift in Sources */,
+				6E88236E21751C9B004F5AB0 /* DummyData.swift in Sources */,
 				6E3FC0ED216CD7CF00F87A54 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,14 +384,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tokyo/Tokyo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PV52LFJ34A;
+				DEVELOPMENT_TEAM = 7VT5H6VPXH;
 				INFOPLIST_FILE = Tokyo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hugo.Tokyo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hugoprinsloo.Tokyo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -320,14 +403,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tokyo/Tokyo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PV52LFJ34A;
+				DEVELOPMENT_TEAM = 7VT5H6VPXH;
 				INFOPLIST_FILE = Tokyo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hugo.Tokyo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hugoprinsloo.Tokyo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
