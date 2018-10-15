@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,14 +18,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="335" height="400"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="B5o-QZ-593">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="B5o-QZ-593">
                         <rect key="frame" x="0.0" y="0.0" width="335" height="400"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbg-aN-AZD">
-                        <rect key="frame" x="0.0" y="300" width="335" height="100"/>
+                        <rect key="frame" x="0.0" y="320" width="335" height="80"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oa-2J-iSo">
-                                <rect key="frame" x="16" y="37" width="303" height="26.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oa-2J-iSo">
+                                <rect key="frame" x="16" y="27" width="303" height="26.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,7 +37,7 @@
                             <constraint firstItem="2oa-2J-iSo" firstAttribute="leading" secondItem="qbg-aN-AZD" secondAttribute="leading" constant="16" id="UfM-Eb-NIV"/>
                             <constraint firstItem="2oa-2J-iSo" firstAttribute="centerY" secondItem="qbg-aN-AZD" secondAttribute="centerY" id="c7i-Ac-JrQ"/>
                             <constraint firstItem="2oa-2J-iSo" firstAttribute="centerX" secondItem="qbg-aN-AZD" secondAttribute="centerX" id="vSu-Bh-3x7"/>
-                            <constraint firstAttribute="height" constant="100" id="y6y-jj-mRK"/>
+                            <constraint firstAttribute="height" constant="80" id="y6y-jj-mRK"/>
                         </constraints>
                     </view>
                 </subviews>

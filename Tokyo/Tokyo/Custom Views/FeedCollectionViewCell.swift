@@ -25,6 +25,7 @@ class FeedCollectionViewCell: UICollectionViewCell {
     func configure(for item: SharedFile) {
         if let item = item as? Image {
             imageView.image = item.image
+            titleLabel.text = item.title
         }
     }
     
