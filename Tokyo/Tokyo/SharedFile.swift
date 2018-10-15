@@ -69,7 +69,7 @@ class FileManager {
 
     
     func add(_ item: SharedFile, completion: @escaping (_ success: Bool) -> Void) {
-        items.append(item)
+        items.insert(item, at: 0)
         completion(true)
 //        switch item.type {
 //        case .image:

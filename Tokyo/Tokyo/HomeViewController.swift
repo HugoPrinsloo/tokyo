@@ -22,8 +22,9 @@ class HomeViewController: UIViewController {
         collectionView.delegate = self
         
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: collectionView.frame.width, height: 400)
-        layout.sectionInset = UIEdgeInsets(top: 16, left: 0, bottom: 0, right: 0)
+        layout.itemSize = CGSize(width: collectionView.frame.width - 32, height: 400)
+        layout.sectionInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
+        layout.minimumLineSpacing = 16
         collectionView.collectionViewLayout = layout
         
         fileManager.fetch { (success) in
