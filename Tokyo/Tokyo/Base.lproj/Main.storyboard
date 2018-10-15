@@ -73,7 +73,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="0.73725076687116564" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -89,7 +89,7 @@
             </objects>
             <point key="canvasLocation" x="-1055.2" y="154.43349753694582"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="2Gi-KX-5Kc">
             <objects>
                 <viewController id="XMK-1f-tia" sceneMemberID="viewController">
@@ -99,17 +99,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="QHT-2Y-vT8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="SettingIcon" selectedImage="SettingIcon" id="sOW-8f-gVp"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="SettingIcon" selectedImage="SettingIcon" id="sOW-8f-gVp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drX-Wa-32Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-250" y="890"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Feed-->
         <scene sceneID="brw-7M-Onj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jM1-lW-LCe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" image="FeedIcon" selectedImage="FeedIcon" id="7Xt-p0-hS7"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="FeedIcon" selectedImage="FeedIcon" id="7Xt-p0-hS7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jel-y6-OFA">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
