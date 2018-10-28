@@ -30,9 +30,7 @@ class FileManager {
     }
     
     private var items: [SharedItem] = []
-
     private let container = CKContainer.default()
-    
     
     func numberOfItems() -> Int {
         return items.count
@@ -41,7 +39,7 @@ class FileManager {
     func item(at index: Int) -> SharedItem {
         return items[index]
     }
-
+    
     func add(_ item: SharedItem, completion: @escaping (_ success: Bool) -> Void) {
         let jsonEncoder = JSONEncoder()
         if let data = try? jsonEncoder.encode(item), let json = String(data: data, encoding: .utf8) {
@@ -58,8 +56,8 @@ class FileManager {
             }
         }
     }
-
-
+    
+    
     func fetchItems(completion: @escaping (_ success: Bool) -> Void) {
         let predicate = NSPredicate(value: true)
         let query = CKQuery(recordType: Keys.recordType, predicate: predicate)
@@ -87,6 +85,6 @@ class FileManager {
         }
     }
     
-
+    
 }
 

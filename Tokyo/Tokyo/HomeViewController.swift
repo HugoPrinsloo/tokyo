@@ -27,7 +27,6 @@ class HomeViewController: UIViewController {
         layout.minimumLineSpacing = 16
         collectionView.collectionViewLayout = layout
         
-        
         fileManager.fetchItems { (success) in
             if success {
                 DispatchQueue.main.async {
@@ -42,9 +41,46 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func handleAddButtonTap(_ sender: Any) {
+        let selectionMenu = UIAlertController(title: "New item", message: nil, preferredStyle: .actionSheet)
+        
+        selectionMenu.addAction(UIAlertAction(title: "Photo", style: .default, handler: { (_) in
+            self.presentPhotoPicker()
+        }))
+        
+        selectionMenu.addAction(UIAlertAction(title: "URL", style: .default, handler: { (_) in
+            self.presentURLAdder(completion: { (url) in
+                if let url = url {
+                    let item = SharedItem(type: .url, title: "Some URL", thumbnail: nil, url: url)
+                    self.fileManager.add(item, completion: { (success) in
+                        if success {
+                            DispatchQueue.main.async {
+                                self.collectionView.reloadData()
+                            }
+                        }
+                    })
+                }
+            })
+        }))
+        
+        present(selectionMenu, animated: true)
+    }
+    
+    private func presentPhotoPicker() {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         present(imagePicker, animated: true)
+    }
+    
+    private func presentURLAdder(completion: @escaping (_ url: String?) -> Void) {
+        let alert = UIAlertController(title: "Add url", message: nil, preferredStyle: .alert)
+        alert.addTextField { (textfield) in
+            textfield.placeholder = "URL"
+        }
+        
+        alert.addAction(UIAlertAction(title: "Save", style: .default, handler: { (_) in
+            completion(alert.textFields?.first?.text)
+        }))
+        present(alert, animated: true)
     }
     
     private func didSelectImage(_ image: UIImage) {

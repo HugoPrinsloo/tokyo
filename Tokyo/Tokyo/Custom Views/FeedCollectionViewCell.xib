@@ -58,7 +58,7 @@
                 <outlet property="titleBackgroundView" destination="qbg-aN-AZD" id="fjg-FE-udL"/>
                 <outlet property="titleLabel" destination="2oa-2J-iSo" id="nb7-KZ-DYJ"/>
             </connections>
-            <point key="canvasLocation" x="-407.19999999999999" y="22.488755622188908"/>
+            <point key="canvasLocation" x="-1378" y="63"/>
         </collectionViewCell>
     </objects>
     <resources>

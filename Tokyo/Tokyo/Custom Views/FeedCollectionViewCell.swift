@@ -23,8 +23,15 @@ class FeedCollectionViewCell: UICollectionViewCell {
     }
     
     func configure(for item: SharedItem) {
-        titleLabel.text = item.title
-        imageView.image = UIImage(data: item.thumbnail!)
+        switch item.type {
+        case .image:
+            titleLabel.text = item.title
+            imageView.image = UIImage(data: item.thumbnail!)
+        case .url:
+            break
+        case .video:
+            break
+        }
 //        if let item = item as? Image {
 //            imageView.image = item.image
 //            titleLabel.text = item.title
