@@ -27,16 +27,18 @@ class HomeViewController: UIViewController {
         layout.minimumLineSpacing = 16
         collectionView.collectionViewLayout = layout
         
-        fileManager.fetch { (success) in
-            DispatchQueue.main.async {
-                self.collectionView.reloadData()
+        
+        fileManager.fetchItems { (success) in
+            if success {
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
             }
         }
         
         title = "Feed"
         navigationController?.navigationBar.prefersLargeTitles = true
         
-       
     }
     
     @IBAction func handleAddButtonTap(_ sender: Any) {
@@ -46,10 +48,12 @@ class HomeViewController: UIViewController {
     }
     
     private func didSelectImage(_ image: UIImage) {
-        let item = Image(image: image, title: "Some title")
+        let item = SharedItem(type: .image, title: "Some image", thumbnail: image.pngData(), url: nil)
         fileManager.add(item) { (success) in
-            DispatchQueue.main.async {
-                self.collectionView.reloadData()
+            if success {
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
             }
         }
     }

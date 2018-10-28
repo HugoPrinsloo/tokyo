@@ -22,11 +22,13 @@ class FeedCollectionViewCell: UICollectionViewCell {
         setup()
     }
     
-    func configure(for item: SharedFile) {
-        if let item = item as? Image {
-            imageView.image = item.image
-            titleLabel.text = item.title
-        }
+    func configure(for item: SharedItem) {
+        titleLabel.text = item.title
+        imageView.image = UIImage(data: item.thumbnail!)
+//        if let item = item as? Image {
+//            imageView.image = item.image
+//            titleLabel.text = item.title
+//        }
     }
     
     private func setup() {
